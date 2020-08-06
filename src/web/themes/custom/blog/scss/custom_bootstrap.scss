@@ -1,0 +1,8 @@
+// override default styles
+// import bootstrap
+
+$theme-colors: (
+  "info": #3c6382
+);
+
+@import "../vendor/bootstrap/scss/bootstrap";

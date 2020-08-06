@@ -1,0 +1,946 @@
+/*General style */
+/*--------------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------------*/
+
+@import url("https://use.typekit.net/kbb2ysp.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+  
+html,
+body {
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    overflow-x: hidden;
+   
+  }
+
+  p {
+      margin-bottom: 0;
+  }
+
+#div-center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.section{
+  max-width: 100vw;
+}
+
+
+
+/*--------------------------------------------------*/
+/* Begin smallest devices style less than 500px */
+/*--------------------------------------------------*/
+ 
+/*--------------------------------------------------*/
+/* Begin Hero section style */
+/*--------------------------------------------------*/
+/*------Begin hero image and text-------*/
+.bg-hero{
+  //background-color: #354666;
+  background-color: #3c6382;
+  
+}
+
+    .hero-text-box-title{
+      background-color: #3c638277;
+      position: absolute;
+      top: 230px;
+      z-index: 1;
+      h1{
+      color:#fff;
+      font-family: 'omnium', sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 180.7%;
+    }
+  }
+
+  .hero-text-box{
+       p{
+        color:#fff;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 180.7%;
+      }
+  }
+  
+  /*------End hero image and text-------*/
+
+/*--------------------------------------------------*/
+/* End Hero section style */
+/*--------------------------------------------------*/
+
+
+/*--------------------------------------------------*/
+/* Begin index section style */
+/*--------------------------------------------------*/
+
+.bg-index{
+  background-color: #ECF0F1;
+}
+
+.card{
+  max-width: 25rem;
+  max-height: 20rem;
+}
+
+.card-body{
+  max-height: 10rem;
+}
+
+.card-footer{
+  max-height: 3rem;
+}
+
+#heading-one{
+  color:#3c6382;
+  font-family: 'omnium', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+#heading-two{
+  color:#3c6382;
+  font-family: 'omnium', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+#paragraph{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  line-height: 30px;
+}
+
+/*--------------------------------------------------*/
+/* End index section style */
+/*--------------------------------------------------*/
+
+
+/*--------------------------------------------------*/
+/* Begin footer section style */
+/*--------------------------------------------------*/
+
+  #footer-image{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-footer{
+    font-family: 'omnium', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    max-width: 100vw;
+    .nav-footer{
+        
+      .link-footer{
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.75);
+        }
+        .link-footer:hover{
+          color: #fff;
+        }
+        
+      }
+    }
+
+  .footer-bottom{
+    p{
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 100;
+      font-size: 0.8rem;
+    }
+  }
+
+/*--------------------------------------------------*/
+/* End footer section style */
+/*--------------------------------------------------*/
+
+
+/*--------------------------------------------------*/
+/* End smallest devices style */
+/*---------------------------------------------------*/
+
+
+/*--------------------------------------------------*/
+ /*  Begin Media Queries */
+/*---------------------------------------------------*/
+
+// Begin Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  #div-center{
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+  /*------begin Navbar-------*/
+ 
+  .navbar{
+    color: #ffffff;
+    font-family: 'omnium', sans-serif;
+    font-weight: 300;
+    max-width: 100vw;
+    .nav-item{
+        font-size: 1.4rem;
+    }
+  }
+
+ 
+
+/*------End Navbar-------*/
+
+ /*------Begin hero image and text-------*/
+
+    .hero-text-box-title{
+      background-color: #3c638277;
+      position: absolute;
+      top: 230px;
+      z-index: 1;
+      h1{
+      color:#fff;
+      font-family: 'omnium', sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 180.7%;
+    }
+  }
+
+  .hero-text-box{
+     p{
+        color:#fff;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 180.7%;
+      }
+  }
+
+ 
+/*------End hero image and text-------*/
+/*--------------------------------------------------*/
+/* Begin index section style */
+/*--------------------------------------------------*/
+
+  .bg-index{
+    background-color: #ECF0F1;
+  }
+
+  .card{
+    max-width: 25rem;
+    max-height: 20rem;
+  }
+
+  .card-body{
+    max-height: 10rem;
+  }
+
+  .card-footer{
+    max-height: 3rem;
+  }
+
+  #heading-one{
+    color:#3c6382;
+    font-family: 'omnium', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+  }
+    
+  #heading-two{
+      color:#3c6382;
+      font-family: 'omnium', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-rendering: optimizeLegibility;
+    }
+  
+    #paragraph{
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      line-height: 30px;
+    }
+
+/*--------------------------------------------------*/
+/* End index section style */
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/* Begin footer section style */
+/*--------------------------------------------------*/
+
+    .footer-image{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  .navbar-footer{
+    font-family: 'omnium', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    .nav-footer{
+        
+      .link-footer{
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.75);
+        }
+        .link-footer:hover{
+          color: #fff;
+        }
+        
+      }
+    }
+
+  .footer-bottom{
+      p{
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 100;
+        font-size: 0.8rem;
+      }
+  }
+
+
+/*--------------------------------------------------*/
+/* End footer section style */
+/*--------------------------------------------------*/
+}
+// End Extra small devices (portrait phones, less than 576px)
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  /*------begin div-center-------*/
+  #div-center{
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+  /*------ div-center-------*/
+  /*------begin Navbar-------*/
+    .navbar{
+    color: #ffffff;
+    font-family: 'omnium', sans-serif;
+    font-weight: 300;
+    max-width: 100vw;
+    .nav-item{
+        font-size: 1.4rem;
+    }
+  }
+
+
+/*------End Navbar-------*/
+
+  
+/*------Begin hero image and text-------*/
+   
+      .hero-text-box-title{
+        background-color: #3c638277;
+        position: absolute;
+        top: 230px;
+        z-index: 1;
+        h1{
+        color:#fff;
+        font-family: 'omnium', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 180.7%;
+      }
+    }
+  
+    .hero-text-box{
+        p{
+          color:#fff;
+          font-size: 2rem;
+          font-weight: 300;
+          line-height: 180.7%;
+        }
+    }
+   
+
+/*------End hero image and text-------*/
+/*--------------------------------------------------*/
+/* Begin index section style */
+/*--------------------------------------------------*/
+#heading-one{
+  color:#3c6382;
+  font-family: 'omnium', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+  
+#heading-two{
+    color:#3c6382;
+    font-family: 'omnium', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+  }
+
+  #paragraph{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .card{
+    max-width: 30rem;
+    max-height: 25rem;
+    }
+  
+    .card-body{
+    max-height: 15rem;
+    }
+  
+    .card-footer{
+    max-height: 3rem;
+    }
+  
+
+/*--------------------------------------------------*/
+/* End index section style */
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/* Begin footer section style */
+/*--------------------------------------------------*/
+
+  .footer-image{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-footer{
+        font-family: 'omnium', sans-serif;
+        font-weight: 300;
+        font-size: 1.3rem;
+          .nav-footer{
+              .link-footer{
+              text-decoration: none;
+              color: rgba(255, 255, 255, 0.75);
+            }
+              .link-footer:hover{
+              color: #fff;
+            }
+
+        }
+    }
+
+  .footer-bottom{
+      p{
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 100;
+      font-size: 0.8rem;
+    }
+  }
+
+}
+
+/*--------------------------------------------------*/
+/* End footer section style */
+/*--------------------------------------------------*/
+
+// End Small devices (landscape phones, 576px and up)
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+/*------begin Navbar-------*/
+
+  .navbar{
+    color: #ffffff;
+    font-family: 'omnium', sans-serif;
+    font-weight: 300;
+    max-width: 100vw;
+    .nav-item{
+        font-size: 1.4rem;
+    }
+  }
+  .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    border-bottom: 2px solid transparent;
+  }
+  .nav-link:hover, 
+  .nav-link:focus
+  {
+    transition: border-bottom 2s;
+    border-bottom: 2px solid white;
+  }
+
+  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+      color: #fff;
+      border-bottom: 2px solid white;
+  }
+
+  .nav-item.nav-link.is-active{
+    color: #fff;
+    border-bottom: 2px solid white;
+  }
+
+
+/*------End Navbar-------*/
+
+/*------Begin hero image and text-------*/
+
+    .hero-text-box-title{
+      background-color: #3c638277;
+      position: absolute;
+      top: 230px;
+      z-index: 1;
+      h1{
+      color:#fff;
+      font-family: 'omnium', sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 180.7%;
+    }
+  }
+
+  .hero-text-box{
+     p{
+        color:#fff;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 180.7%;
+      }
+  }
+
+
+/*------End hero image and text-------*/    
+
+/*--------------------------------------------------*/
+/* Begin index section style */
+/*--------------------------------------------------*/
+#heading-one{
+  color:#3c6382;
+  font-family: 'omnium', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+  
+#heading-two{
+    color:#3c6382;
+    font-family: 'omnium', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+  }
+
+  #paragraph{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 30px;
+  }
+
+  .card{
+    max-width: 30rem;
+    max-height: 25rem;
+    }
+  
+    .card-body{
+    max-height: 10rem;
+    }
+  
+    .card-footer{
+    max-height: 3rem;
+    }
+  
+
+/*--------------------------------------------------*/
+/* End index section style */
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/* Begin footer section style */
+/*--------------------------------------------------*/
+
+  .footer-image{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.navbar-footer{
+      font-family: 'omnium', sans-serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+        .nav-footer{
+
+            .link-footer{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.75);
+          }
+            .link-footer:hover{
+            color: #fff;
+          }
+
+      }
+  }
+
+  .footer-bottom{
+     p{
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 100;
+      font-size: 0.8rem;
+    }
+  }
+
+/*--------------------------------------------------*/
+/* End footer section style */
+/*--------------------------------------------------*/
+}
+// End Medium devices (tablets, 768px and up)
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  /*------begin Navbar-------*/
+  
+  .navbar{
+    color: #ffffff;
+    font-family: 'omnium', sans-serif;
+    font-weight: 300;
+    max-width: 100vw;
+    .nav-item{
+        font-size: 1.4rem;
+    }
+  }
+  .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    border-bottom: 2px solid transparent;
+  }
+  .nav-link:hover, 
+  .nav-link:focus
+  {
+    transition: border-bottom 2s;
+    border-bottom: 2px solid white;
+  }
+  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+      color: #fff;
+      border-bottom: 2px solid white;
+  }
+
+  .nav-item.nav-link.is-active{
+    color: #fff;
+    border-bottom: 2px solid white;
+  }
+
+  
+/*------End Navbar-------*/
+
+/*------Begin hero image and text-------*/
+
+   .hero-text-box-title{
+      background-color: #3c638277;
+      position: absolute;
+      top: 230px;
+      z-index: 1;
+      h1{
+      color:#fff;
+      font-family: 'omnium', sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 180.7%;
+    }
+  }
+
+  .hero-text-box{
+      p{
+        color:#fff;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 180.7%;
+      }
+  }
+   
+    
+/*------End hero image and text-------*/    
+
+/*--------------------------------------------------*/
+/* Begin index section style */
+/*--------------------------------------------------*/
+#heading-one{
+  color:#3c6382;
+  font-family: 'omnium', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+  
+#heading-two{
+    color:#3c6382;
+    font-family: 'omnium', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+  }
+
+  #paragraph{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 30px;
+  }
+
+  .card{
+    max-width: 30rem;
+    max-height: 25rem;
+    }
+  
+    .card-body{
+    max-height: 10rem;
+    }
+  
+    .card-footer{
+    max-height: 3rem;
+    }
+  
+
+/*--------------------------------------------------*/
+/* End index section style */
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/* Begin footer section style */
+/*--------------------------------------------------*/
+
+.footer-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-footer{
+      font-family: 'omnium', sans-serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+        .nav-footer{
+
+            .link-footer{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.75);
+          }
+            .link-footer:hover{
+            color: #fff;
+          }
+
+      }
+  }
+
+  .footer-bottom{
+     p{
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 100;
+      font-size: 0.8rem;
+    }
+  }
+
+}  
+
+/*--------------------------------------------------*/
+/* End footer section style */
+/*--------------------------------------------------*/
+
+// End Large devices (desktops, 992px and up)
+
+
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  
+ /*------begin Navbar-------*/
+ 
+ .navbar{
+  color: #ffffff;
+  font-family: 'omnium', sans-serif;
+  font-weight: 300;
+  max-width: 100vw;
+  .nav-item{
+      font-size: 1.4rem;
+  }
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover, 
+.nav-link:focus
+{
+  transition: border-bottom 2s;
+  border-bottom: 2px solid white;
+}
+.navbar-dark.navbar-nav.active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+    border-bottom: 2px solid white;
+}
+
+.nav-item.nav-link.is-active{
+  color: #fff;
+  border-bottom: 2px solid white;
+}
+
+/*------End Navbar-------*/
+
+/*------Begin hero image and text-------*/
+
+      .hero-text-box-title{
+        background-color: #3c638277;
+        position: absolute;
+        top: 230px;
+        z-index: 1;
+        h1{
+        color:#fff;
+        font-family: 'omnium', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 180.7%;
+      }
+    }
+  
+    .hero-text-box{
+       p{
+          color:#fff;
+          font-size: 2rem;
+          font-weight: 300;
+          line-height: 180.7%;
+        }
+    }
+
+   
+  
+  
+/*------End hero image and text-------*/    
+
+/*--------------------------------------------------*/
+/* Begin index section style */
+/*--------------------------------------------------*/
+#heading-one{
+color:#3c6382;
+font-family: 'omnium', sans-serif;
+font-size: 2.5rem;
+font-weight: 200;
+letter-spacing: 1px;
+text-rendering: optimizeLegibility;
+}
+
+#heading-two{
+  color:#3c6382;
+  font-family: 'omnium', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+#paragraph{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  line-height: 30px;
+}
+
+.card{
+  max-width: 30rem;
+  max-height: 25rem;
+  }
+
+  .card-body{
+  max-height: 10rem;
+  }
+
+  .card-footer{
+  max-height: 3rem;
+  }
+
+
+/*--------------------------------------------------*/
+/* End index section style */
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/* Begin footer section style */
+/*--------------------------------------------------*/
+
+  .footer-image{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-footer{
+      font-family: 'omnium', sans-serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+        .nav-footer{
+
+            .link-footer{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.75);
+          }
+            .link-footer:hover{
+            color: #fff;
+          }
+
+      }
+  }
+
+  .footer-bottom{
+     p{
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 100;
+      font-size: 0.8rem;
+    }
+  }
+
+}
+/*--------------------------------------------------*/
+/* End footer section style */
+/*--------------------------------------------------*/
+
+// End Extra large devices (large desktops, 1200px and up)
+
+
+
+/*--------------------------------------------------*/
+ /*****End Media Queries*****/
+/*---------------------------------------------------*/
+
+
+
+
+
+
+
+

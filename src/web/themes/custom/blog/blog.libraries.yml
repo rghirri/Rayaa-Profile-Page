@@ -1,0 +1,51 @@
+jQuery:
+  version: 3.5.1
+  js:
+    '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js': {}
+
+bootstrap:
+  version: 4.5.0
+  css:
+    theme:
+      vendor/bootstrap/dist/css/bootstrap.min.css: {}
+  js:
+    vendor/bootstrap/dist/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery 
+    
+
+font:
+  version: VERSION
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Nunito:200,300,400,700': { type: external }
+      
+waypointJQ:
+  js:
+    vendor/js/jquery.waypoints.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+Animate:
+  version: VERSION
+  css:
+    theme:
+      '//cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css': {}      
+
+globalstyle:
+  version: VERSION
+  css:
+    theme:
+      css/main.css: {}
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+   
+  
