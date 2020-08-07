@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-color: red;
+  /*background-color: $backGroundColor;
+  color: $fontColor;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  text-rendering: $textRendering;*/
+  overflow-x: hidden;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/Images/Profile-bg-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
