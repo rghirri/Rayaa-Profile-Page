@@ -9924,19 +9924,47 @@ h3 {
 
 html,
 body {
-  background-color: #fff;
-  color: #555;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/Images/Profile-bg-image.jpg");
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Images/Profile-bg-image.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
+  max-height: 100vh;
+}
+header .hero-text-box {
+  position: absolute;
+  max-width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .hero-text-box h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 190%;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+}
+header .hero-text-box #btn-full {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+header .hero-text-box #btn-ghost {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+header .hero-text-box #btn-ghost:hover,
+header .hero-text-box #btn-ghost:active {
+  color: #fff;
+}
+header .hero-text-box #btn-full:hover,
+header .hero-text-box #btn-full:active {
+  background-color: #bf6516;
+  border: 1px solid #bf6516;
 }

@@ -1,64 +1,3 @@
-@import "html-styles";
-
-@mixin all-headers {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  @mixin all-headers-two {
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  @mixin all-headers-three {
-    font-size: 110%;
-    margin-bottom: 15px;
-    letter-spacing: -1px;
-    word-spacing: 1px;
-    word-break: break-word;
-  }
-  @mixin features-paragraph {
-    font-size: 90%;
-    line-height: 145%;
-    text-align: justify;
-    text-justify: inter-word;
-    word-spacing: -1px;
-  }
-  @mixin header-btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 02s, border 0.2s, color 0.2s;
-  }
-  @mixin round-number {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    display: block;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 150%;
-    padding: 5px;
-    float: left;
-    margin-right: 25px;
-  }
-  
-  .clearfix {
-    zoom: 1;
-  }
-  .clearfix:after {
-    content: ".";
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-  }
-  
-
 ////////////////
 // Basic setup
 ///////////////////
@@ -71,23 +10,17 @@
 
   html,
   body {
-    background-color: $backGroundColor;
-    color: $fontColor;
-    font-family: $fontFamily;
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    text-rendering: $textRendering;
     overflow-x: hidden;
   }
 
 header {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("/Images/Profile-bg-image.jpg"); //set as viewport
+      url("Images/Profile-bg-image.jpg"); //set as viewport
     background-size: cover;
     background-attachment: fixed; // very clever feature :)
     background-position: center;
-    height: 100vh;
+    max-height: 100vh;
     .hero-text-box {
         position: absolute;
         max-width: 1140px;
@@ -95,7 +28,6 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
         h1 {
-          @include all-headers;
           margin: 0; // to remove unwanted margins.
           color: #fff;
           font-size: 190%; //which is 40px (200% of 20px)
@@ -104,20 +36,17 @@ header {
         }
     
         #btn-full {
-          @include header-btn;
           background-color: #e67e22;
           border: 1px solid #e67e22;
           color: #fff;
           margin-right: 15px;
         }
         #btn-ghost {
-          @include header-btn;
           border: 1px solid #e67e22;
           color: #e67e22;
         }
         #btn-ghost:hover,
         #btn-ghost:active {
-          @extend #btn-full:hover, #btn-full:active;
           color: #fff;
         }
         #btn-full:hover,
