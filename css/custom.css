@@ -10,12 +10,13 @@ body {
 }
 
 header {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Images/Profile-bg-image.jpg");
+  height: 100%;
+  width: 100%;
+  background: url(../Images/Profile-bg-image.jpg) no-repeat center top fixed;
+  background-size: 100% auto;
   background-size: cover;
+  display: block;
   background-attachment: fixed;
-  background-position: center;
-  max-height: 100vh;
 }
 header .hero-text-box {
   position: absolute;
@@ -25,6 +26,13 @@ header .hero-text-box {
   transform: translate(-50%, -50%);
 }
 header .hero-text-box h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 190%;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+}
+header .hero-text-box h2 {
   margin: 0;
   color: #fff;
   font-size: 190%;

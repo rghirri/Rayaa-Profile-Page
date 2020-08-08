@@ -1,7 +1,16 @@
+/***********************************/
+      //Style Variables//
+/***********************************/
+$fontFamily: "Lato", "Arial", sans-serif;
+$fontWeight: 300;
+$fontSize: 20px;
+$fontColor: #555;
+$backGroundColor: #fff;
+$textRendering: optimizeLegibility;
 ////////////////
 // Basic setup
 ///////////////////
-//****step one: First development steps***
+
 * {
     margin: 0;
     padding: 0;
@@ -10,49 +19,64 @@
 
   html,
   body {
+    background-color: $backGroundColor;
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    text-rendering: $textRendering;
     overflow-x: hidden;
-  }
+    }
+    
+ // End basic Setup //   
 
 header {
-    position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("Images/Profile-bg-image.jpg"); //set as viewport
-    background-size: cover;
-    background-attachment: fixed; // very clever feature :)
-    background-position: center;
-    max-height: 100vh;
+  background-image: url("../Images/Profile-bg-image.jpg"); //set as viewport
+  background-size: cover;
+  background-attachment: fixed; // very clever feature :)
+  background-position: center;
+  height: 100vh;
     .hero-text-box {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+      padding: 5rem;
+      border-radius: 1rem;
         position: absolute;
         max-width: 1140px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         h1 {
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 1px;
           margin: 0; // to remove unwanted margins.
           color: #fff;
           font-size: 190%; //which is 40px (200% of 20px)
           word-spacing: 4px;
           margin-bottom: 20px;
         }
+        h2 {
+          font-size: 180%;
+          word-spacing: 2px;
+          text-align: center;
+          margin-bottom: 30px;
+          margin: 0; // to remove unwanted margins.
+          color: #fff;
+          font-size: 190%; //which is 40px (200% of 20px)
+          word-spacing: 4px;
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 90%;
+          line-height: 145%;
+          text-align: justify;
+          text-justify: inter-word;
+          word-spacing: -1px;
+      }
     
-        #btn-full {
-          background-color: #e67e22;
-          border: 1px solid #e67e22;
-          color: #fff;
-          margin-right: 15px;
-        }
-        #btn-ghost {
-          border: 1px solid #e67e22;
-          color: #e67e22;
-        }
-        #btn-ghost:hover,
-        #btn-ghost:active {
-          color: #fff;
-        }
-        #btn-full:hover,
-        #btn-full:active {
-          background-color: #bf6516;
-          border: 1px solid #bf6516;
-        }
+       a{
+        text-decoration: none;
+        display: inline-block;
+       }
     }
-}
+  }
