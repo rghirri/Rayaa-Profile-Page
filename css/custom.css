@@ -1,3 +1,5 @@
+/***********************************/
+/***********************************/
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +8,26 @@
 
 html,
 body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
 header {
-  height: 100%;
-  width: 100%;
-  background: url(../Images/Profile-bg-image.jpg) no-repeat center top fixed;
-  background-size: 100% auto;
+  background-image: url("../Images/Profile-bg-image.jpg");
   background-size: cover;
-  display: block;
   background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
 header .hero-text-box {
+  max-width: 10rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 1rem;
   position: absolute;
   max-width: 1140px;
   top: 50%;
@@ -26,35 +35,37 @@ header .hero-text-box {
   transform: translate(-50%, -50%);
 }
 header .hero-text-box h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin: 0;
   color: #fff;
-  font-size: 190%;
+  font-size: 200%;
   word-spacing: 4px;
-  margin-bottom: 20px;
 }
 header .hero-text-box h2 {
+  font-size: 150%;
+  word-spacing: 2px;
+  font-weight: 200;
   margin: 0;
   color: #fff;
-  font-size: 190%;
+  font-size: 160%;
   word-spacing: 4px;
-  margin-bottom: 20px;
 }
-header .hero-text-box #btn-full {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
+header .hero-text-box p {
+  font-family: "Questrial", sans-serif;
+  font-size: 90%;
+  line-height: 150%;
   color: #fff;
-  margin-right: 15px;
+  word-spacing: 3px;
 }
-header .hero-text-box #btn-ghost {
-  border: 1px solid #e67e22;
-  color: #e67e22;
-}
-header .hero-text-box #btn-ghost:hover,
-header .hero-text-box #btn-ghost:active {
+header .hero-text-box a {
+  text-decoration: none;
+  display: inline-block;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin: 0;
   color: #fff;
-}
-header .hero-text-box #btn-full:hover,
-header .hero-text-box #btn-full:active {
-  background-color: #bf6516;
-  border: 1px solid #bf6516;
+  font-size: 100%;
+  word-spacing: 2px;
 }

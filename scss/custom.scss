@@ -1,7 +1,7 @@
 /***********************************/
       //Style Variables//
 /***********************************/
-$fontFamily: "Lato", "Arial", sans-serif;
+$fontFamily: "Raleway",sans-serif;;
 $fontWeight: 300;
 $fontSize: 20px;
 $fontColor: #555;
@@ -38,10 +38,9 @@ header {
   height: 100vh;
     .hero-text-box {
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-      padding: 5rem;
       border-radius: 1rem;
         position: absolute;
-        max-width: 1140px;
+        max-width: 40rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -51,32 +50,35 @@ header {
           letter-spacing: 1px;
           margin: 0; // to remove unwanted margins.
           color: #fff;
-          font-size: 190%; //which is 40px (200% of 20px)
+          font-size: 200%; //which is 40px (200% of 20px)
           word-spacing: 4px;
-          margin-bottom: 20px;
         }
         h2 {
-          font-size: 180%;
+          font-size: 150%;
           word-spacing: 2px;
-          text-align: center;
-          margin-bottom: 30px;
+          font-weight: 200;
           margin: 0; // to remove unwanted margins.
           color: #fff;
-          font-size: 190%; //which is 40px (200% of 20px)
+          font-size: 160%; //which is 40px (200% of 20px)
           word-spacing: 4px;
-          margin-bottom: 20px;
         }
         p{
+          font-family: "Questrial",sans-serif;
           font-size: 90%;
-          line-height: 145%;
-          text-align: justify;
-          text-justify: inter-word;
-          word-spacing: -1px;
+          line-height: 150%;
+          color: #fff;
+          word-spacing: 3px;
       }
     
        a{
         text-decoration: none;
         display: inline-block;
+        word-spacing: 2px;
+        font-weight: 300;
+        margin: 0; // to remove unwanted margins.
+        color: #fff;
+        font-size: 100%; //which is 40px (200% of 20px)
+        word-spacing: 2px;
        }
     }
   }
