@@ -9991,9 +9991,18 @@ header .hero-text-box a {
 
 section {
   height: 100vh;
+  margin-top: 15rem;
 }
 
+@media (min-width: 1190px) {
+  section {
+    height: 100vh;
+    margin-top: 0rem;
+  }
+}
 .About-Text {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   background: linear-gradient(rgba(19, 132, 150, 0.8), rgba(19, 132, 150, 0.8));
   border-radius: 1rem;
   max-width: 30rem;
@@ -10017,33 +10026,43 @@ section {
   word-spacing: 5px;
 }
 
-/*@media (min-width: 1400px) { 
+@media (min-width: 1190px) {
   .About-Text {
+    margin-top: 0;
+    margin-bottom: 0;
     background: linear-gradient(rgba(19, 132, 150, 0.8), rgba(19, 132, 150, 0.8));
     border-radius: 1rem;
     max-width: 30rem;
     height: 60vh;
-      h2 {
-        font-size: 150%;
-        word-spacing: 2px;
-        font-weight: 200;
-        margin: 0; // to remove unwanted margins.
-        color: #fff;
-        font-size: 160%; //which is 40px (200% of 20px)
-        word-spacing: 4px;
-        line-height: 400%;
-      }
-      p{
-        font-family: "Questrial",sans-serif;
-        font-size: 90%;
-        line-height: 190%;
-        color: #fff;
-        word-spacing: 5px;
-    }
   }
- }*/
+  .About-Text h2 {
+    font-size: 150%;
+    word-spacing: 2px;
+    font-weight: 200;
+    margin: 0;
+    color: #fff;
+    font-size: 160%;
+    word-spacing: 4px;
+    line-height: 200%;
+  }
+  .About-Text p {
+    font-family: "Questrial", sans-serif;
+    font-size: 90%;
+    line-height: 190%;
+    color: #fff;
+    word-spacing: 5px;
+  }
+}
 .About-Image {
   border-radius: 1rem;
   max-width: 30rem;
   height: 60vh;
 }
+
+/*@media (min-width: 1200px) {
+  .About-Image{
+    border-radius: 1rem;
+    max-width: 30rem;
+    height: 60vh;    
+ }
+}*/

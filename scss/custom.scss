@@ -95,11 +95,49 @@ header {
 //*********************************//
 section{
   height: 100vh;
+  margin-top: 15rem;  
+}
+
+@media (min-width: 1190px) {
+  section{
+    height: 100vh;
+    margin-top: 0rem;  
+  }
 }
 //********************
-
+// About-text 
+.About-Text {
+  margin-top: 5rem;  
+  margin-bottom: 5rem;
+  background: linear-gradient(rgba(19, 132, 150, 0.8), rgba(19, 132, 150, 0.8));
+  border-radius: 1rem;
+  max-width: 30rem;
+  height: 60vh;
+    h2 {
+      font-size: 150%;
+      word-spacing: 2px;
+      font-weight: 200;
+      margin: 0; // to remove unwanted margins.
+      color: #fff;
+      font-size: 160%; //which is 40px (200% of 20px)
+      word-spacing: 4px;
+      line-height: 200%;
+    }
+    p{
+      font-family: "Questrial",sans-serif;
+      font-size: 90%;
+      line-height: 190%;
+      color: #fff;
+      word-spacing: 5px;
+  }
+}
+// End About-text 
+//***********************
   // About-text MQ
+  @media (min-width: 1190px) {
   .About-Text {
+    margin-top: 0;
+    margin-bottom: 0;
     background: linear-gradient(rgba(19, 132, 150, 0.8), rgba(19, 132, 150, 0.8));
     border-radius: 1rem;
     max-width: 30rem;
@@ -122,41 +160,26 @@ section{
         word-spacing: 5px;
     }
   }
-    /*@media (min-width: 1400px) { 
-      .About-Text {
-        background: linear-gradient(rgba(19, 132, 150, 0.8), rgba(19, 132, 150, 0.8));
-        border-radius: 1rem;
-        max-width: 30rem;
-        height: 60vh;
-          h2 {
-            font-size: 150%;
-            word-spacing: 2px;
-            font-weight: 200;
-            margin: 0; // to remove unwanted margins.
-            color: #fff;
-            font-size: 160%; //which is 40px (200% of 20px)
-            word-spacing: 4px;
-            line-height: 400%;
-          }
-          p{
-            font-family: "Questrial",sans-serif;
-            font-size: 90%;
-            line-height: 190%;
-            color: #fff;
-            word-spacing: 5px;
-        }
-      }
-     }*/
+}
   // End About-text MQ
   //********************************
 //***********************************//
 // About-Image
 //**********************
-.About-Image{
+.About-Image{ 
+  border-radius: 1rem;
+  max-width: 30rem;
+  height: 60vh;
+}
+
+/*@media (min-width: 1200px) {
+  .About-Image{
     border-radius: 1rem;
     max-width: 30rem;
-    height: 60vh;
-}
+    height: 60vh;    
+ }
+}*/
+
 // End About Image
 //****** End About Me Section ******//
 //*********************************//
